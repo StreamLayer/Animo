@@ -52,14 +52,14 @@ public struct Options {
     
     public init(speed: CGFloat = 1, fillMode: FillMode = .both, removedOnCompletion: Bool = false) {
         
-        func valueForCAAnimation(_ fillMode: FillMode) -> String {
+        func valueForCAAnimation(_ fillMode: FillMode) -> CAMediaTimingFillMode {
             
             switch fillMode {
                 
-            case FillMode.forwards: return kCAFillModeForwards
-            case FillMode.backwards: return kCAFillModeBackwards
-            case FillMode.both: return kCAFillModeBoth
-            default: return kCAFillModeRemoved
+            case FillMode.forwards: return .forwards
+            case FillMode.backwards: return .backwards
+            case FillMode.both: return .both
+            default: return .removed
             }
         }
         
@@ -72,6 +72,6 @@ public struct Options {
     // MARK: Internal
     
     internal let speed: CGFloat
-    internal let fillMode: String
+    internal let fillMode: CAMediaTimingFillMode
     internal let removedOnCompletion: Bool
 }
