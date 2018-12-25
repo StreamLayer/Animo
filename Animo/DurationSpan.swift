@@ -27,7 +27,7 @@
 // MARK: - DurationSpan
 
 public enum DurationSpan: ExpressibleByNilLiteral, ExpressibleByFloatLiteral {
-    
+    public typealias FloatLiteralType = TimeInterval
     
     // MARK: Public
     
