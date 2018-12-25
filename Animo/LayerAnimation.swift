@@ -29,9 +29,7 @@ import QuartzCore
 
 // MARK: - LayerAnimation
 
-public struct LayerAnimation {
-    
-    
+public struct LayerAnimation: Equatable {
     // MARK: Public
     
     public let accumulatedDuration: TimeInterval
@@ -266,10 +264,12 @@ public struct LayerAnimation {
         
         return copy
     }
-    
-    
+  
+    public static func == (lhs: LayerAnimation, rhs: LayerAnimation) -> Bool {
+      return lhs.object == rhs.object
+    }
+
     // MARK: Private
-    
     fileprivate let object: CAAnimation
 }
 
