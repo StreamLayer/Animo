@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = "Animo"
-    s.version = "1.4.0"
-    s.swift_version = "4.1"
+    s.version = "1.5.0"
+    s.swift_version = "4.2"
     s.license = "MIT"
     s.summary = "Bring life to CALayers with SpriteKit-like animation builders."
     s.homepage = "https://github.com/eure/Animo"
@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = "9.0"
     s.osx.deployment_target = "10.10"
 #    s.watchos.deployment_target = "2.0"
-#    s.tvos.deployment_target = "9.0"
+    s.tvos.deployment_target = "9.0"
 
     s.source_files = "Animo", "Animo/**/*.{swift}"
     s.ios.frameworks = "Foundation", "CoreGraphics", "QuartzCore", "UIKit"
     s.osx.frameworks = "Foundation", "CoreGraphics", "QuartzCore", "AppKit"
 #    s.watchos.frameworks = "Foundation", "CoreGraphics", "QuartzCore", "UIKit"
-#    s.tvos.frameworks = "Foundation", "CoreGraphics", "QuartzCore", "UIKit"
+    s.tvos.frameworks = "Foundation", "CoreGraphics", "QuartzCore", "UIKit"
 
     s.requires_arc = true
 end
