@@ -247,7 +247,9 @@ extension NSObject: KeyframeValueConvertible {
                 case .closePath:
                     path.closeSubpath()
                     didClosePath = true
-                }
+                @unknown default:
+                  fatalError("unknown element type")
+              }
             }
             
             if !didClosePath {

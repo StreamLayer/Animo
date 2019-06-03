@@ -32,13 +32,13 @@ public extension CALayer {
     
     // MARK: Public
     
-    public func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString) -> String {
+    func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString) -> String {
         
         self.add(animation.copyObject(), forKey: key)
         return key
     }
     
-    public func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString, completion: @escaping () -> Void) -> String {
+    func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString, completion: @escaping () -> Void) -> String {
         
         CATransaction.begin()
         CATransaction.setCompletionBlock(completion)
@@ -47,18 +47,18 @@ public extension CALayer {
         return key
     }
     
-    public func pauseAnimations() {
+    func pauseAnimations() {
         
         self.speed = 0
         self.timeOffset = self.convertTime(CACurrentMediaTime(), from: nil)
     }
     
-    public func resumeAnimations() {
+    func resumeAnimations() {
         
         self.resumeAnimationsAtSpeed(1)
     }
     
-    public func resumeAnimationsAtSpeed(_ newSpeed: Float) {
+    func resumeAnimationsAtSpeed(_ newSpeed: Float) {
         
         let pausedTime = self.timeOffset
         
@@ -79,7 +79,7 @@ public extension CALayer {
         self.beginTime = elapsedTime
     }
     
-    public func runTransition(_ type: Transition = .fade, duration: TimeInterval = 0, timingMode: TimingMode = .linear, options: Options = Options(fillMode: [], removedOnCompletion: true)) {
+    func runTransition(_ type: Transition = .fade, duration: TimeInterval = 0, timingMode: TimingMode = .linear, options: Options = Options(fillMode: [], removedOnCompletion: true)) {
         
         let transition = CATransition()
         type.applyTo(transition)
