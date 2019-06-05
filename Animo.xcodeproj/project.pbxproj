@@ -39,6 +39,21 @@
 		B5F728551C27F59B00519751 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F728541C27F59B00519751 /* QuartzCore.framework */; };
 		B5F728581C27F5B400519751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F728571C27F5B400519751 /* UIKit.framework */; };
 		B5F7285A1C27F5BB00519751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F728591C27F5BB00519751 /* Foundation.framework */; };
+		D801E12622A88D3B00F7EDE8 /* Animo.h in Headers */ = {isa = PBXBuildFile; fileRef = B5687D621BB45AFC00168B7E /* Animo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D801E12722A88D7600F7EDE8 /* Animo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5687DA81BB78EA800168B7E /* Animo.swift */; };
+		D801E12822A88D7600F7EDE8 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5181CA81BC574830095A2B8 /* Transition.swift */; };
+		D801E12922A88D7600F7EDE8 /* CALayer+Animo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5687DAA1BB7908800168B7E /* CALayer+Animo.swift */; };
+		D801E12A22A88D7600F7EDE8 /* LayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5687D791BB45B1400168B7E /* LayerAnimation.swift */; };
+		D801E12B22A88D7600F7EDE8 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5687DAC1BB792B100168B7E /* Options.swift */; };
+		D801E12C22A88D7600F7EDE8 /* DurationSpan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2E5F01BBEE12600FC246A /* DurationSpan.swift */; };
+		D801E12D22A88D7600F7EDE8 /* TimingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2A2B11BC17A3A00E58A73 /* TimingMode.swift */; };
+		D801E12E22A88D7600F7EDE8 /* KeyframeValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5687DAE1BB7AAB500168B7E /* KeyframeValueConvertible.swift */; };
+		D801E12F22A88D7A00F7EDE8 /* CAAnimation+AnimoInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D8DF01C683E3100632F96 /* CAAnimation+AnimoInternals.swift */; };
+		D801E13022A88D7A00F7EDE8 /* Transition+AnimoInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D8DF21C68404300632F96 /* Transition+AnimoInternals.swift */; };
+		D801E13222A88D9500F7EDE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D801E13122A88D9500F7EDE8 /* CoreGraphics.framework */; };
+		D801E13422A88D9B00F7EDE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D801E13322A88D9B00F7EDE8 /* UIKit.framework */; };
+		D801E13622A88DA300F7EDE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D801E13522A88DA300F7EDE8 /* Foundation.framework */; };
+		D801E13822A88DA700F7EDE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D801E13722A88DA700F7EDE8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +95,11 @@
 		B5F728541C27F59B00519751 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B5F728571C27F5B400519751 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B5F728591C27F5BB00519751 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D801E13122A88D9500F7EDE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D801E13322A88D9B00F7EDE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D801E13522A88DA300F7EDE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D801E13722A88DA700F7EDE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D820E8E022A5CEDC001B5FE6 /* Animo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Animo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D820E8E322A5CEDC001B5FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D820E8E922A5D4F3001B5FE6 /* Animo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +137,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D801E13822A88DA700F7EDE8 /* QuartzCore.framework in Frameworks */,
+				D801E13622A88DA300F7EDE8 /* Foundation.framework in Frameworks */,
+				D801E13422A88D9B00F7EDE8 /* UIKit.framework in Frameworks */,
+				D801E13222A88D9500F7EDE8 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +150,6 @@
 		B5687D551BB45AFC00168B7E = {
 			isa = PBXGroup;
 			children = (
-				D820E8E122A5CEDC001B5FE6 /* Animo */,
 				B5F728561C27F5A100519751 /* Frameworks */,
 				B52ABD2C1C1BB0550085EC1F /* LICENSE */,
 				B52ABD2D1C1BB0550085EC1F /* README.md */,
@@ -190,6 +210,10 @@
 		B5F728561C27F5A100519751 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D801E13722A88DA700F7EDE8 /* QuartzCore.framework */,
+				D801E13522A88DA300F7EDE8 /* Foundation.framework */,
+				D801E13322A88D9B00F7EDE8 /* UIKit.framework */,
+				D801E13122A88D9500F7EDE8 /* CoreGraphics.framework */,
 				B5F331DE1C843C05009475AC /* AppKit.framework */,
 				B5F331D81C843BEF009475AC /* CoreGraphics.framework */,
 				B5F331D61C843BE4009475AC /* CoreGraphics.framework */,
@@ -200,15 +224,6 @@
 				B5F728571C27F5B400519751 /* UIKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D820E8E122A5CEDC001B5FE6 /* Animo */ = {
-			isa = PBXGroup;
-			children = (
-				D820E8E922A5D4F3001B5FE6 /* Animo.h */,
-				D820E8E322A5CEDC001B5FE6 /* Info.plist */,
-			);
-			path = Animo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +249,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D801E12622A88D3B00F7EDE8 /* Animo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +310,9 @@
 			productReference = B5F331C31C843944009475AC /* Animo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D820E8DF22A5CEDC001B5FE6 /* Animo */ = {
+		D820E8DF22A5CEDC001B5FE6 /* Animo-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D820E8E722A5CEDC001B5FE6 /* Build configuration list for PBXNativeTarget "Animo" */;
+			buildConfigurationList = D820E8E722A5CEDC001B5FE6 /* Build configuration list for PBXNativeTarget "Animo-tvOS" */;
 			buildPhases = (
 				D820E8DB22A5CEDC001B5FE6 /* Headers */,
 				D820E8DC22A5CEDC001B5FE6 /* Sources */,
@@ -307,7 +323,7 @@
 			);
 			dependencies = (
 			);
-			name = Animo;
+			name = "Animo-tvOS";
 			productName = Animo;
 			productReference = D820E8E022A5CEDC001B5FE6 /* Animo.framework */;
 			productType = "com.apple.product-type.framework";
@@ -356,7 +372,7 @@
 				B5687D5E1BB45AFC00168B7E /* Animo-iOS */,
 				B5687D681BB45AFC00168B7E /* AnimoTests */,
 				B5F331C21C843944009475AC /* Animo-OSX */,
-				D820E8DF22A5CEDC001B5FE6 /* Animo */,
+				D820E8DF22A5CEDC001B5FE6 /* Animo-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -439,6 +455,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D801E12A22A88D7600F7EDE8 /* LayerAnimation.swift in Sources */,
+				D801E12822A88D7600F7EDE8 /* Transition.swift in Sources */,
+				D801E12F22A88D7A00F7EDE8 /* CAAnimation+AnimoInternals.swift in Sources */,
+				D801E12922A88D7600F7EDE8 /* CALayer+Animo.swift in Sources */,
+				D801E12D22A88D7600F7EDE8 /* TimingMode.swift in Sources */,
+				D801E12B22A88D7600F7EDE8 /* Options.swift in Sources */,
+				D801E12722A88D7600F7EDE8 /* Animo.swift in Sources */,
+				D801E12C22A88D7600F7EDE8 /* DurationSpan.swift in Sources */,
+				D801E13022A88D7A00F7EDE8 /* Transition+AnimoInternals.swift in Sources */,
+				D801E12E22A88D7600F7EDE8 /* KeyframeValueConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,10 +692,8 @@
 		D820E8E522A5CEDC001B5FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Animo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
@@ -688,10 +712,8 @@
 		D820E8E622A5CEDC001B5FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Animo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
@@ -746,7 +768,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D820E8E722A5CEDC001B5FE6 /* Build configuration list for PBXNativeTarget "Animo" */ = {
+		D820E8E722A5CEDC001B5FE6 /* Build configuration list for PBXNativeTarget "Animo-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D820E8E522A5CEDC001B5FE6 /* Debug */,

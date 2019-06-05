@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D820E8DF22A5CEDC001B5FE6"
                BuildableName = "Animo.framework"
-               BlueprintName = "Animo"
+               BlueprintName = "Animo-tvOS"
                ReferencedContainer = "container:Animo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D820E8DF22A5CEDC001B5FE6"
             BuildableName = "Animo.framework"
-            BlueprintName = "Animo"
+            BlueprintName = "Animo-tvOS"
             ReferencedContainer = "container:Animo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D820E8DF22A5CEDC001B5FE6"
             BuildableName = "Animo.framework"
-            BlueprintName = "Animo"
+            BlueprintName = "Animo-tvOS"
             ReferencedContainer = "container:Animo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
