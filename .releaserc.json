@@ -9,7 +9,7 @@
       "assets": ["report.json"]
     }],
     ["@semantic-release/exec", {
-      "publishCmd": "carthage build --archives"
+      "publishCmd": "carthage build --archive"
     }],
     ["@semantic-release/github", {
       "assets": [
