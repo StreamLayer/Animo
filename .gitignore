@@ -5,5 +5,7 @@ AnimoDemo/AnimoDemo.xcodeproj/project.xcworkspace/xcuserdata
 Animo.xcodeproj/project.xcworkspace/xcuserdata
 AnimoDemo/DerivedData
 DerivedData
+node_modules
+*.lock
 *.framework.zip
 Carthage/Build
