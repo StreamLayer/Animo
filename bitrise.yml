@@ -31,6 +31,7 @@ workflows:
 
             swift package generate-xcodeproj
 
+            echo "MACH_O_TYPE = staticlib" >> $xcconfig
             echo "DEBUG_INFORMATION_FORMAT = dwarf" >> $xcconfig
             echo "CLANG_ENABLE_MODULE_DEBUGGING = NO" >> $xcconfig
             export XCODE_XCCONFIG_FILE="$xcconfig"

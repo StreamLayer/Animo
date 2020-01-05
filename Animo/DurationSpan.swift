@@ -23,6 +23,8 @@
 //  SOFTWARE.
 //
 
+import Foundation
+
 // MARK: - DurationSpan
 
 public enum DurationSpan: ExpressibleByNilLiteral, ExpressibleByFloatLiteral {
