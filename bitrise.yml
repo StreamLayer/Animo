@@ -41,6 +41,7 @@ workflows:
 
 app:
   envs:
+  - DIR: "Animo"
   - PRODUCT_NAME: "Animo"
   - PREFIX: "SLR_"
   - REPORT: "./report.json"
