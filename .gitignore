@@ -9,3 +9,5 @@ node_modules
 *.lock
 *.framework.zip
 Carthage/Build
+node_modules
+*.lock
