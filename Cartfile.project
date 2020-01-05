@@ -1,10 +1,7 @@
-Animo-tvOS:
+Animo-Package:
   project: Animo.xcodeproj
   sdks:
   - appletvos
   - appletvsimulator
-Animo-iOS:
-  project: Animo.xcodeproj
-  sdks:
   - iphonesimulator
   - iphoneos

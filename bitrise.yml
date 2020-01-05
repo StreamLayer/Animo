@@ -19,6 +19,9 @@ workflows:
 
             yarn add semantic-release @semantic-release/exec @semantic-release/git
 
+            xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
+            trap 'rm -f "$xcconfig"; git checkout -- "$DIR"' INT TERM HUP EXIT
+
             TMPDIR=$(mktemp -d)
             cp -R $DIR $TMPDIR
             swift-prefixify rewrite $TMPDIR/$DIR $PWD/$DIR \
@@ -26,8 +29,7 @@ workflows:
               --prefix $PREFIX \
               --product-name "$PRODUCT_NAME"
 
-            xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
-            trap 'rm -f "$xcconfig"; git checkout -- "$DIR"' INT TERM HUP EXIT
+            swift package generate-xcodeproj
 
             echo "MACH_O_TYPE = staticlib" >> $xcconfig
             echo "DEBUG_INFORMATION_FORMAT = dwarf" >> $xcconfig
