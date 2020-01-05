@@ -7,10 +7,10 @@ let package = Package(
     .iOS(.v11), .tvOS(.v11)
   ],
   products: [
-    .library(name: "Animo", targets: ["Animo"])
+    .library(name: "SLR_Animo", type: .static, targets: ["SLR_Animo"])
   ],
   targets: [
-    .target(name: "Animo", dependencies: [], path: "Animo/")
+    .target(name: "SLR_Animo", dependencies: [], path: "Animo/")
   ],
   swiftLanguageVersions: [.version("5")]
 )
