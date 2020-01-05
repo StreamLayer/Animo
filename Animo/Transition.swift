@@ -23,24 +23,22 @@
 //  SOFTWARE.
 //
 
-
 // MARK: - Transition
 
 public enum Transition {
-    
+
     // MARK: - Directions
-    
+
     public enum Direction {
-        
+
         case leftToRight
         case rightToLeft
         case topToBottom
         case bottomToTop
     }
-    
-    
+
     // MARK: Public
-    
+
     case fade
     case moveIn(Direction)
     case push(Direction)

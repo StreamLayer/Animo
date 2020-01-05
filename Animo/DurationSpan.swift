@@ -23,43 +23,38 @@
 //  SOFTWARE.
 //
 
-
 // MARK: - DurationSpan
 
 public enum DurationSpan: ExpressibleByNilLiteral, ExpressibleByFloatLiteral {
     public typealias FloatLiteralType = TimeInterval
-    
+
     // MARK: Public
-    
+
     case automatic
     case constant(TimeInterval)
     case infinite
-    
+
     public static let defaultConstant = TimeInterval(0.3)
-    
-    
+
     // MARK: NilLiteralConvertible
-    
+
     public init(nilLiteral: ()) {
-        
+
         self = .automatic
     }
-    
-    
+
     // MARK: FloatLiteralConvertible
-    
+
     public init(floatLiteral value: TimeInterval) {
-        
+
         if value == 0 {
-            
+
             self = .automatic
-        }
-        else if value.isInfinite && value > 0 {
-            
+        } else if value.isInfinite && value > 0 {
+
             self = .infinite
-        }
-        else {
-            
+        } else {
+
             self = .constant(value)
         }
     }

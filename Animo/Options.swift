@@ -25,52 +25,49 @@
 
 import QuartzCore
 
-
 // MARK: - Options
 
 public struct Options {
-    
-    
+
     // MARK: - Public
-    
+
     public static let `default` = Options()
-    
+
     public struct FillMode: OptionSet {
-        
+
         public static let forwards = FillMode(rawValue: 1)
         public static let backwards = FillMode(rawValue: 2)
         public static let none: FillMode = []
         public static let both: FillMode = [.forwards, .backwards]
-        
+
         public init(rawValue: Int) {
-            
+
             self.rawValue = rawValue
         }
-        
+
         public let rawValue: Int
     }
-    
+
     public init(speed: CGFloat = 1, fillMode: FillMode = .both, removedOnCompletion: Bool = false) {
-        
+
         func valueForCAAnimation(_ fillMode: FillMode) -> CAMediaTimingFillMode {
-            
+
             switch fillMode {
-                
+
             case FillMode.forwards: return .forwards
             case FillMode.backwards: return .backwards
             case FillMode.both: return .both
             default: return .removed
             }
         }
-        
+
         self.speed = speed
         self.fillMode = valueForCAAnimation(fillMode)
         self.removedOnCompletion = removedOnCompletion
     }
-    
-    
+
     // MARK: Internal
-    
+
     internal let speed: CGFloat
     internal let fillMode: CAMediaTimingFillMode
     internal let removedOnCompletion: Bool

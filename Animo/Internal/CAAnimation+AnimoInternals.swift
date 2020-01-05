@@ -26,16 +26,14 @@
 import Foundation
 import QuartzCore
 
-
 // MARK: - CAAnimation
 
 internal extension CAAnimation {
-    
-    
+
     // MARK: Internal
-    
+
     func applyOptions(_ options: Options = .default) {
-        
+
         self.speed = Float(options.speed)
         self.fillMode = options.fillMode
         self.isRemovedOnCompletion = options.removedOnCompletion

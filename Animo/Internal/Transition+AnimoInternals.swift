@@ -26,41 +26,39 @@
 import Foundation
 import QuartzCore
 
-
 // MARK: - Transition
 
 internal extension Transition {
-    
-    
+
     // MARK: Internal
-    
+
     func applyTo(_ object: CATransition) {
-        
+
         func subtypeForCATransition(_ direction: Direction) -> CATransitionSubtype {
-            
+
             switch direction {
-                
+
             case .leftToRight:  return CATransitionSubtype.fromLeft
             case .rightToLeft:  return CATransitionSubtype.fromRight
             case .topToBottom:  return CATransitionSubtype.fromTop
             case .bottomToTop:  return CATransitionSubtype.fromBottom
             }
         }
-        
+
         switch self {
-            
+
         case .fade:
             object.type = CATransitionType.fade
             object.subtype = nil
-            
+
         case .moveIn(let direction):
             object.type = CATransitionType.moveIn
             object.subtype = subtypeForCATransition(direction)
-            
+
         case .push(let direction):
           object.type = CATransitionType.push
           object.subtype = subtypeForCATransition(direction)
-            
+
         case .reveal(let direction):
             object.type = CATransitionType.reveal
             object.subtype = subtypeForCATransition(direction)

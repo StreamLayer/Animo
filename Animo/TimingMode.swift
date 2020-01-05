@@ -25,19 +25,17 @@
 
 import QuartzCore
 
-
 // MARK: - TimingMode
 
 public enum TimingMode {
-    
-    
+
     // MARK: Public
-    
+
     case linear
     case easeIn, easeOut, easeInOut
     case spring(damping: CGFloat)
     case discrete
-    
+
     // http://easings.net/
     case easeInSine, easeOutSine, easeInOutSine
     case easeInQuad, easeOutQuad, easeInOutQuad
@@ -47,23 +45,22 @@ public enum TimingMode {
     case easeInExpo, easeOutExpo, easeInOutExpo
     case easeInCirc, easeOutCirc, easeInOutCirc
     case easeInBack, easeOutBack, easeInOutBack
-    
+
     case custom(c1x: Float, c1y: Float, c2x: Float, c2y: Float)
-    
-    
+
     // MARK: Internal
-    
+
     internal var timingFunction: CAMediaTimingFunction {
-        
+
         switch self {
-            
+
         case .linear:       return CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         case .easeIn:       return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         case .easeOut:      return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         case .easeInOut:    return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         case .spring(let damping):    return CAMediaTimingFunction(controlPoints: 0.5, 1.1 + (Float(damping) / 3.0), 1, 1)
         case .discrete:       return CAMediaTimingFunction(controlPoints: 1, 0, 1, 1)
-            
+
             // http://easings.net/
         case .easeInSine:       return CAMediaTimingFunction(controlPoints: 0.47, 0, 0.745, 0.715)
         case .easeOutSine:      return CAMediaTimingFunction(controlPoints: 0.39, 0.575, 0.565, 1)
@@ -89,7 +86,7 @@ public enum TimingMode {
         case .easeInBack:       return CAMediaTimingFunction(controlPoints: 0.6, -0.28, 0.735, 0.045)
         case .easeOutBack:      return CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.32, 1.275)
         case .easeInOutBack:    return CAMediaTimingFunction(controlPoints: 0.68, -0.55, 0.265, 1.55)
-            
+
         case .custom(let c1x, let c1y, let c2x, let c2y):
             return CAMediaTimingFunction(controlPoints: c1x, c1y, c2x, c2y)
         }

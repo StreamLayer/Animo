@@ -28,64 +28,63 @@ import QuartzCore
 // MARK: - CALayer
 
 public extension CALayer {
-    
-    
+
     // MARK: Public
-    
+
     func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString) -> String {
-        
+
         self.add(animation.copyObject(), forKey: key)
         return key
     }
-    
+
     func runAnimation(_ animation: LayerAnimation, forKey key: String = UUID().uuidString, completion: @escaping () -> Void) -> String {
-        
+
         CATransaction.begin()
         CATransaction.setCompletionBlock(completion)
         self.add(animation.copyObject(), forKey: key)
         CATransaction.commit()
         return key
     }
-    
+
     func pauseAnimations() {
-        
+
         self.speed = 0
         self.timeOffset = self.convertTime(CACurrentMediaTime(), from: nil)
     }
-    
+
     func resumeAnimations() {
-        
+
         self.resumeAnimationsAtSpeed(1)
     }
-    
+
     func resumeAnimationsAtSpeed(_ newSpeed: Float) {
-        
+
         let pausedTime = self.timeOffset
-        
+
         guard pausedTime != 0 else {
-            
+
             let currentTime = CACurrentMediaTime()
             self.timeOffset = self.convertTime(currentTime, from: nil)
             self.beginTime = currentTime
             self.speed = newSpeed
             return
         }
-        
+
         self.speed = newSpeed
         self.timeOffset = 0
         self.beginTime = 0
-        
+
         let elapsedTime = self.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
         self.beginTime = elapsedTime
     }
-    
+
     func runTransition(_ type: Transition = .fade, duration: TimeInterval = 0, timingMode: TimingMode = .linear, options: Options = Options(fillMode: [], removedOnCompletion: true)) {
-        
+
         let transition = CATransition()
         type.applyTo(transition)
         transition.duration = duration
         transition.applyOptions(options)
-        
+
         self.add(transition, forKey: nil)
     }
 }
