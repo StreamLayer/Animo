@@ -547,7 +547,7 @@
       };
       "OBJ_8" = {
          isa = "PBXFileReference";
-         path = "Animo.h";
+         path = "SLR_Animo.h";
          sourceTree = "<group>";
       };
       "OBJ_9" = {
