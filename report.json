@@ -1,1 +1,1 @@
-{"identifiers":["DurationSpan","LayerAnimation","FloatingPointKeyframeValueConvertible","Options","KeyframeValueConvertible","Transition","Animo","TimingMode"],"products":["Animo"],"prefix":"SLR_","fnReplace":[]}
+{"identifiers":["TimingMode","Animo","Options","LayerAnimation","KeyframeValueConvertible","Transition","DurationSpan","FloatingPointKeyframeValueConvertible"],"products":["Animo"],"prefix":"SLR_","fnReplace":[]}
