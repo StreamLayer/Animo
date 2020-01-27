@@ -6,7 +6,7 @@
         <BuildableReference
           BuildableIdentifier = "primary"
           BuildableName = "'lib$(TARGET_NAME)'"
-          BlueprintName = "SLR_Animo"
+          BlueprintName = "Animo"
           ReferencedContainer = "container:Animo.xcodeproj">
         </BuildableReference>
       </BuildActionEntry>

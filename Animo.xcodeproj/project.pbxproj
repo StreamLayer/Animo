@@ -3,30 +3,30 @@
    archiveVersion = "1";
    objectVersion = "46";
    objects = {
-      "Animo::SLR_Animo" = {
+      "Animo::Animo" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_44";
+         buildConfigurationList = "OBJ_39";
          buildPhases = (
-            "OBJ_47",
-            "OBJ_58"
+            "OBJ_42",
+            "OBJ_53"
          );
          dependencies = (
          );
-         name = "SLR_Animo";
-         productName = "SLR_Animo";
-         productReference = "Animo::SLR_Animo::Product";
+         name = "Animo";
+         productName = "Animo";
+         productReference = "Animo::Animo::Product";
          productType = "com.apple.product-type.framework";
       };
-      "Animo::SLR_Animo::Product" = {
+      "Animo::Animo::Product" = {
          isa = "PBXFileReference";
-         path = "SLR_Animo.framework";
+         path = "Animo.framework";
          sourceTree = "BUILT_PRODUCTS_DIR";
       };
       "Animo::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_38";
+         buildConfigurationList = "OBJ_55";
          buildPhases = (
-            "OBJ_41"
+            "OBJ_58"
          );
          dependencies = (
          );
@@ -48,66 +48,66 @@
             "en"
          );
          mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_22";
+         productRefGroup = "OBJ_23";
          projectDirPath = ".";
          targets = (
-            "Animo::SwiftPMPackageDescription",
-            "Animo::SLR_Animo"
+            "Animo::Animo",
+            "Animo::SwiftPMPackageDescription"
          );
       };
       "OBJ_10" = {
          isa = "PBXFileReference";
-         path = "Animo.swift";
+         path = "Info.plist";
          sourceTree = "<group>";
       };
       "OBJ_11" = {
          isa = "PBXFileReference";
-         path = "CALayer+Animo.swift";
+         path = "Animo.swift";
          sourceTree = "<group>";
       };
       "OBJ_12" = {
          isa = "PBXFileReference";
-         path = "DurationSpan.swift";
+         path = "CALayer+Animo.swift";
          sourceTree = "<group>";
       };
       "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "DurationSpan.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_14",
-            "OBJ_15"
+            "OBJ_15",
+            "OBJ_16"
          );
          name = "Internal";
          path = "Internal";
          sourceTree = "<group>";
       };
-      "OBJ_14" = {
+      "OBJ_15" = {
          isa = "PBXFileReference";
          path = "CAAnimation+AnimoInternals.swift";
          sourceTree = "<group>";
       };
-      "OBJ_15" = {
+      "OBJ_16" = {
          isa = "PBXFileReference";
          path = "Transition+AnimoInternals.swift";
          sourceTree = "<group>";
       };
-      "OBJ_16" = {
+      "OBJ_17" = {
          isa = "PBXFileReference";
          path = "KeyframeValueConvertible.swift";
          sourceTree = "<group>";
       };
-      "OBJ_17" = {
+      "OBJ_18" = {
          isa = "PBXFileReference";
          path = "LayerAnimation.swift";
          sourceTree = "<group>";
       };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "Options.swift";
-         sourceTree = "<group>";
-      };
       "OBJ_19" = {
          isa = "PBXFileReference";
-         path = "TimingMode.swift";
+         path = "Options.swift";
          sourceTree = "<group>";
       };
       "OBJ_2" = {
@@ -121,10 +121,15 @@
       };
       "OBJ_20" = {
          isa = "PBXFileReference";
-         path = "Transition.swift";
+         path = "TimingMode.swift";
          sourceTree = "<group>";
       };
       "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "Transition.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
          isa = "PBXGroup";
          children = (
          );
@@ -132,43 +137,38 @@
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_22" = {
+      "OBJ_23" = {
          isa = "PBXGroup";
          children = (
-            "Animo::SLR_Animo::Product"
+            "Animo::Animo::Product"
          );
          name = "Products";
          path = "";
          sourceTree = "BUILT_PRODUCTS_DIR";
       };
-      "OBJ_24" = {
+      "OBJ_25" = {
          isa = "PBXFileReference";
          path = "AnimoTests";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_25" = {
+      "OBJ_26" = {
          isa = "PBXFileReference";
          path = "Animo";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_26" = {
+      "OBJ_27" = {
          isa = "PBXFileReference";
          path = "node_modules";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_27" = {
+      "OBJ_28" = {
          isa = "PBXFileReference";
          path = "Carthage";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "AnimoDemo";
-         sourceTree = "SOURCE_ROOT";
-      };
       "OBJ_29" = {
          isa = "PBXFileReference";
-         path = "DerivedData";
+         path = "AnimoDemo";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_3" = {
@@ -215,67 +215,52 @@
       };
       "OBJ_30" = {
          isa = "PBXFileReference";
-         path = "report.json";
-         sourceTree = "<group>";
+         path = "DerivedData";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_31" = {
          isa = "PBXFileReference";
-         path = "LICENSE";
+         path = "report.json";
          sourceTree = "<group>";
       };
       "OBJ_32" = {
          isa = "PBXFileReference";
-         path = "bitrise.yml";
+         path = "LICENSE";
          sourceTree = "<group>";
       };
       "OBJ_33" = {
          isa = "PBXFileReference";
-         path = "Animo.podspec";
+         path = "bitrise.yml";
          sourceTree = "<group>";
       };
       "OBJ_34" = {
          isa = "PBXFileReference";
-         path = "README.md";
+         path = "Animo.podspec";
          sourceTree = "<group>";
       };
       "OBJ_35" = {
          isa = "PBXFileReference";
-         path = "Cartfile.project";
+         path = "README.md";
          sourceTree = "<group>";
       };
       "OBJ_36" = {
          isa = "PBXFileReference";
+         path = "Cartfile.project";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
          path = "package.json";
          sourceTree = "<group>";
       };
-      "OBJ_38" = {
+      "OBJ_39" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_39",
-            "OBJ_40"
+            "OBJ_40",
+            "OBJ_41"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
-      };
-      "OBJ_39" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.1"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
       };
       "OBJ_4" = {
          isa = "XCBuildConfiguration";
@@ -318,6 +303,201 @@
       "OBJ_40" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Animo.xcodeproj/Animo_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Animo";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Animo";
+            TVOS_DEPLOYMENT_TARGET = "11.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_41" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Animo.xcodeproj/Animo_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Animo";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Animo";
+            TVOS_DEPLOYMENT_TARGET = "11.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_42" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_43",
+            "OBJ_44",
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52"
+         );
+      };
+      "OBJ_43" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_44" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_45" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_46" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
+      };
+      "OBJ_47" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_48" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_49" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35",
+            "OBJ_36",
+            "OBJ_37"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_51" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_52" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_53" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_55" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_56",
+            "OBJ_57"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_56" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.1"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_57" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
             LD = "/usr/bin/true";
             OTHER_SWIFT_FLAGS = (
                "-swift-version",
@@ -335,190 +515,15 @@
          };
          name = "Release";
       };
-      "OBJ_41" = {
+      "OBJ_58" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_42"
+            "OBJ_59"
          );
       };
-      "OBJ_42" = {
+      "OBJ_59" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_6";
-      };
-      "OBJ_44" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_45",
-            "OBJ_46"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_45" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Animo.xcodeproj/SLR_Animo_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "SLR-Animo";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "SLR_Animo";
-            TVOS_DEPLOYMENT_TARGET = "11.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_46" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Animo.xcodeproj/SLR_Animo_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "SLR-Animo";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "SLR_Animo";
-            TVOS_DEPLOYMENT_TARGET = "11.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_47" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50",
-            "OBJ_51",
-            "OBJ_52",
-            "OBJ_53",
-            "OBJ_54",
-            "OBJ_55",
-            "OBJ_56",
-            "OBJ_57"
-         );
-      };
-      "OBJ_48" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
-      };
-      "OBJ_49" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_24",
-            "OBJ_25",
-            "OBJ_26",
-            "OBJ_27",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33",
-            "OBJ_34",
-            "OBJ_35",
-            "OBJ_36"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_51" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_52" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_53" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_16";
-      };
-      "OBJ_54" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
-      };
-      "OBJ_55" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_56" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_57" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_58" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
       };
       "OBJ_6" = {
          isa = "PBXFileReference";
@@ -529,30 +534,34 @@
       "OBJ_7" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_8",
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
             "OBJ_9",
             "OBJ_10",
             "OBJ_11",
             "OBJ_12",
             "OBJ_13",
-            "OBJ_16",
+            "OBJ_14",
             "OBJ_17",
             "OBJ_18",
             "OBJ_19",
-            "OBJ_20"
+            "OBJ_20",
+            "OBJ_21"
          );
-         name = "Sources";
+         name = "Animo";
          path = "Animo";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_8" = {
-         isa = "PBXFileReference";
-         path = "SLR_Animo.h";
-         sourceTree = "<group>";
-      };
       "OBJ_9" = {
          isa = "PBXFileReference";
-         path = "Info.plist";
+         path = "SLR_Animo.h";
          sourceTree = "<group>";
       };
    };
