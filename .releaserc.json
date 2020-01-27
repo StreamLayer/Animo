@@ -1,5 +1,5 @@
 {
-  "branches": ["master", "swift-5.0.1"],
+  "branches": ["master", { "name": "swift-5.0.1", "prerelease": true }],
   "plugins": [
     ["@semantic-release/commit-analyzer", {
       "preset": "angular"
